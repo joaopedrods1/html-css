@@ -44,18 +44,37 @@ section {
     font-family: var(--fonte2);
     font-size: 4vw;
 }
+section p {
+    padding-bottom: 2em;
+}
 .normal {
     background-color: white;
     color: black;
 }
 .imagem {
-    background-color: rgba(71, 68, 68, 0.993);
+    background-color: rgba(51,51,51);
     color: white;
+    box-shadow: inset;
 }
 .imagem p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(51, 47, 47, 0.253);
     padding: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+#img01 {
+    background-image: url(../projeto-cordel/imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  right center;
+}
+#img02 {
+    background-image: url(../projeto-cordel/imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:right center;
 }
 footer {
     background-color: black;
