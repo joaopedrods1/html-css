@@ -10,6 +10,8 @@
         }
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
         td,th {
             border: 1px solid black;
@@ -20,6 +22,15 @@
             font-weight: bold;
             color: white;
         }
+        thead tr th {
+                position: sticky;
+                top: -1px;
+                background-color: black;
+        }
+        tbody  tr:nth-child(even){
+                background-color: lightgray;
+        }
+        /*odd(2n-1) or even(2n)*/
         .num{
             text-align: right;
         }
