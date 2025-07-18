@@ -15,23 +15,31 @@
             border: 1px solid black;
             padding: 10px;
         }
-        thead {
-            background-color: gray;
+        thead, tfoot {
+            background-color: black;
+            font-weight: bold;
             color: white;
         }
         .num{
             text-align: right;
         }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1> 
     <h2> População por estado</h2>
     <table>
+        <caption>População das Unidades Federativas Brasileiras</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
                 <th>% da população total</th>
             </tr>
         </thead>
@@ -172,9 +180,11 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
-            <td><strong>212 583 750</strong></td>
-            <td>100%</td>
+            <th scope="col" colspan="2">
+                Total de habitantes  </th>
+            <td>
+                <strong>212 583 750</strong>
+            </td>
         </tfoot>
     </table>
 </body>
