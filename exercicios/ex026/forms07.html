@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de forms</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="iest">Estado:</label>
+            <select name="Estado" id="iest">
+                <option value="">--Escolha--</option>
+                <optgroup label="Sudeste"></optgroup>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="Desenvolvedor de Inteligência Artificial"></option>
+                <option value="Especialista em Cibersegurança"></option>
+                <option value="Engenheiro de Dados"></option>
+                <option value="Cientista de Dados"></option>
+                <option value="Especialista em Cloud Computing"></option>
+                <option value="Desenvolvedor de Aplicativos Móveis"></option>
+                <option value="Analista de Big Data"></option>
+                <option value="Gestor de Privacidade de Dados"></option>
+                <option value="Especialista em Internet das Coisas (IoT)"></option>
+                <option value="Engenheiro de Robótica"></option>
+                <option value="Designer de Experiência do Usuário (UX)"></option>
+                <option value="Especialista em Realidade Virtual e Aumentada"></option>
+                <option value="Gestor de Sustentabilidade"></option>
+                <option value="Especialista em Energias Renováveis"></option>
+                <option value="Desenvolvedor de Blockchain"></option>
+                <option value="Consultor de Transformação Digital"></option>
+                <option value="Especialista em Marketing Digital"></option>
+                <option value="Gestor de E-commerce"></option>
+                <option value="Bioinformata"></option>
+                <option value="Especialista em Telemedicina"></option>
+                <option value="Profissional de Saúde Mental"></option>
+                <option value="Gestor de Diversidade e Inclusão"></option>
+                <option value="Especialista em Logística e Supply Chain"></option>
+                <option value="Engenheiro Ambiental"></option>
+                <option value="Especialista em Mobilidade Urbana"></option>
+                <option value="Gestor de Experiência do Cliente"></option>
+                <option value="Educador Digital"></option>
+                <option value="Especialista em Agricultura de Precisão"></option>
+                <option value="Gestor de Inovação"></option>
+                <option value="Especialista em Finanças Digitais"></option>
+                <option value="Especialista em Cibersegurança">
+                <option value="Engenheiro de Dados">
+                <option value="Cientista de Dados">
+                <option value="Especialista em Cloud Computing">
+                <option value="Desenvolvedor de Aplicativos Móveis">
+                <option value="Analista de Big Data">
+                <option value="Gestor de Privacidade de Dados">
+                <option value="Especialista em Internet das Coisas (IoT)">
+                <option value="Engenheiro de Robótica">
+                <option value="Designer de Experiência do Usuário (UX)">
+                <option value="Especialista em Realidade Virtual e Aumentada">
+                <option value="Gestor de Sustentabilidade">
+                <option value="Especialista em Energias Renováveis">
+                <option value="Desenvolvedor de Blockchain">
+                <option value="Consultor de Transformação Digital">
+                <option value="Especialista em Marketing Digital">
+                <option value="Gestor de E-commerce">
+                <option value="Bioinformata">
+                <option value="Especialista em Telemedicina">
+            </datalist>
+        <div>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"> 
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
