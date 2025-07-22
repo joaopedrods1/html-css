@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* Configurações para dispositivo "deitado"*/
+ body {
+    background-color: orange;
+    background: url(../imgs/cev-landscape.jpg);
+    background-position: left bottom;
+ }
