@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*Configuração geral */
 * {
+    * {
     margin: 0;
     padding: 0;
 }
@@ -15,17 +15,16 @@ h1 {
     color: white;
     text-shadow: 3px 3px 0 #020d60;
 }
-
-@media screen and (orientation: landscape){
-    /* Configurações para dispositivo "deitado"*/
- body {
-    background: url(imgs/cev-landscape.jpg);
-    background-position: left bottom;
- }
 }
-@media screen and (orientation: portrait){
+@media screen and (orientation: portrait) {
     body {
     background: url(imgs/cev-portrait.jpg);
     background-position: center bottom;
 }
+}
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(imgs/cev-landscape.jpg);
+        background-position: left bottom;
+    }
 }
